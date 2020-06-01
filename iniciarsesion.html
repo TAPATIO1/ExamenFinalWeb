@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Iniciar sesion</title>
+  <link rel="stylesheet" href="css/estilos1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/bebe.png">
+</head>
+<body>
+  <div class="contenedor-form">
+    <div class="toggle">
+      <span>Crear cuenta</span>
+    </div>
+    <div class="formulario">
+      <h2>Iniciar sesion</h2>
+      <form action="validar.php" method="post">
+        <input type="text" placeholder="Usuario" name="usuario" required>
+        <input type="password" placeholder="Contraseña" name="contraseña" required>
+        <input type="Submit" value="Iniciar sesion">
+      </form>
+    </div>
+
+
+    <div class="formulario">
+      <h2 class="form-titulo">Crea tu cuenta</h2>
+      <form action="registrar.php" method="post" class="form-register" onsubmit="returnvalidar();">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" required>
+        <input type="email" id="correo" name="correo" placeholder="Correo electronico" class="input-100" required>
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" required>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="input-48" required>
+        <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-100" required>
+        <input type="submit" class="btn-enviar" placeholder="Registrar" value="Registrar">
+      </form>
+    </div>
+
+
+    <div class="reset-password">
+      <a href=#>Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(../imagenes/fondo2.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: 'open sans';
+}
+
+.contenedor-form{
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  max-width: 500px;
+  margin: 48px auto;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contenedor-form .toggle{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  border-top: 2px solid #4098b8;
+  border-bottom: 2px solid #4098b8;
+  border-left: 2px solid #4098b8;
+  border-right: 2px solid #4098b8;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.contenedor-form .toggle span{
+  letter-spacing: 1px;
+}
+.contenedor-form .toggle:hover{
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.contenedor-form h2{
+  margin: 0 0 28px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"]{
+  outline: none;
+  background: rgba(0,0,0,.5);
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 4px solid #4098b8;
+  font-family: 'open sans';
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  transition: all .5s ease;
+}
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus{
+  border-bottom: 4px solid #fff;
+}
+.contenedor-form input[type="submit"]{
+  background: #4098b8;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: normal;
+  font-family: 'open sans';
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.contenedor-form input[type="submit"]:hover{
+  background: #fff;
+  color: #4098b8;
+}
+.contenedor-form .reset-password{
+  background: #4098b8;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.contenedor-form .reset-password a{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'open sans';
+}
+.contenedor-form .formulario {
+  padding: 40px;
+  display: none;
+}
+.contenedor-form .formulario:nth-child(2){
+  display: block;
+}
